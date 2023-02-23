@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "750eee56-9d5f-4a79-9cf3-bf624a5036dc",
+		"name": "Backend Users Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Get All Etudiants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44338/api/etudiants",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44338",
+							"path": [
+								"api",
+								"etudiants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Contacts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44338/api/contacts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44338",
+							"path": [
+								"api",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Etudiant By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44338/api/etudiant?Id={48224ebf-d200-4368-b7bc-f42ad03aa4ac}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44338",
+							"path": [
+								"api",
+								"etudiant"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "{48224ebf-d200-4368-b7bc-f42ad03aa4ac}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Levels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44338/api/levels",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44338",
+							"path": [
+								"api",
+								"levels"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Ceci renferme toute les requetes GET de notre application"
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Add Etudiant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Etudiant_FirstName\": \"TETSTFDTvd\",\r\n    \"Etudiant_LastName\": \"teste sddsdsf\",\r\n    \"Etudiant_Genre\": true,\r\n    \"Etudiant_Birth\": \"2001-09-18T00:00:00\",\r\n    \"Etudiant_Photo\": \"dossier//fichier\",\r\n    \"Etudiant_Adress\": [\r\n        {\r\n        \"Adress_City\": \"Madagascar\",\r\n        \"Adress_Country\": \"Antananarivo\",\r\n        \"Adress_Quartier\": \"Antanimena\",\r\n        \"Code_Postal\": 150\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44338/api/etudiants/add",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44338",
+							"path": [
+								"api",
+								"etudiants",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UPDATE",
+			"item": [
+				{
+					"name": "Update Etudiant",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"Etudiant_FirstName\": \"UPDATE\",\r\n    \"Etudiant_LastName\": \"undysbhudsnfujfndngfjiv,xjkcv, cvc UPDATE\",\r\n    \"Etudiant_Genre\": true,\r\n    \"Etudiant_Birth\": \"2001-09-18T00:00:00\",\r\n    \"Etudiant_Photo\": \"dossier/teste\",\r\n    \"Etudiant_Adress\": [\r\n        {\r\n            \"Adress_City\": \"Madagascar\",\r\n            \"Adress_Country\": \"Antananarivo\",\r\n            \"Adress_Quartier\": \"Antanimena\",\r\n            \"Code_Postal\": 150,\r\n            \"Id\": \"b2b6df02-1b8b-4fe7-8b51-a95be8bfda96\"\r\n        }\r\n    ]\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44338/api/etudiant/update?Id={47041577-0bf0-46fe-8c77-16c62114bcc6}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44338",
+							"path": [
+								"api",
+								"etudiant",
+								"update"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "{47041577-0bf0-46fe-8c77-16c62114bcc6}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "Delete Etudiant",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44338/api/etudiant/delete?Id={c98cf577-a9dd-475c-9223-4c1e3ac7cbce}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44338",
+							"path": [
+								"api",
+								"etudiant",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "{c98cf577-a9dd-475c-9223-4c1e3ac7cbce}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "One Olny GET",
+			"item": [
+				{
+					"name": "Add Or Update Levels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44338/api/levels/add",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44338",
+							"path": [
+								"api",
+								"levels",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Or Update Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44338/api/products/assign",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44338",
+							"path": [
+								"api",
+								"products",
+								"assign"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "GET",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "POST",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
