@@ -1,6 +1,9 @@
 import React from 'react'
+<<<<<<< HEAD
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+=======
+>>>>>>> 50f7ede465b355c741cce96b9379a316f43bebda
 
 function StudentList() {
   const [etudiantAdress, setEtudiantAdress] = useState([]);
@@ -21,15 +24,29 @@ function StudentList() {
             <td>{elm.Etudiant_Photo}</td>   
             </tr>
             
+<<<<<<< HEAD
             )
         })
 
   return (
     <div>
          <table>
+=======
+                <tr>
+                <td>{elm.nom}</td>
+                <td>{elm.prenom}</td>
+                <td><button type="button" className='btn btn-danger' onClick={ () => this.handleDelete( elm.id)}>Supprimer</button></td>
+                </tr>
+        )
+    })
+    return(
+        <div className="table table-dark table-striped">
+            <table className='tableau'>
+>>>>>>> 50f7ede465b355c741cce96b9379a316f43bebda
             <tr>
                 <th>Nom</th>
                 <th>Prénom</th>
+                <th>Action</th>
             </tr>
            {mapped}
             </table>

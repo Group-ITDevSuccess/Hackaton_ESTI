@@ -1,6 +1,7 @@
 // import { type } from '@testing-library/user-event/dist/type';
 import axios from 'axios';
 import React from 'react';
+import { Button } from 'bootstrap';
 
 class Ajout extends React.Component{
      state = {
@@ -92,6 +93,7 @@ class Ajout extends React.Component{
     return (
         <div>
             <form method="post" onSubmit={this.handlesubmit}>
+<<<<<<< HEAD
             <label htmlFor='Etudiant_LastName'>Nom</label>
             <input type="text" name="Etudiant_LastName" required onChange={this.handleNameChange}></input>
             <label htmlFor='Etudiant_FirstName'>Prenom</label>
@@ -115,6 +117,39 @@ class Ajout extends React.Component{
             <label htmlFor='Etudiant_Photo'>Photo</label>
             <input type="text" name='Etudiant_Photo' onChange={this.handlePhotoChange}></input>
             <button type='submit'>Valider</button>
+=======
+                <label htmlFor='nom'>Nom</label>
+                <input type="text" name="nom" required onChange={this.handleNameChange}></input>
+
+                <label htmlFor='prenom'>Prenom</label>
+                <input type="text" name="prenom" required onChange={this.handlePrenomChange}></input>
+
+                <label htmlFor='niveau'>Niveau</label>
+                <input type="text" name="niveau" required onChange={this.handleNiveauChange}></input>
+
+                <label htmlFor='adresse'>Adresse</label>
+                <input type="text" name="adresse" required onChange={this.handleAdresseChange}></input>
+
+                <label htmlFor='date_de_naissance'>Date de naissance</label>
+                <input type="date" name="date_de_naissance" required onChange={this.handleDate_de_NaissanceChange}></input>
+
+                <label htmlFor='quartier'>Adresse respectif</label>
+                <input type="text" name="quartier" required onChange={this.handleQuartierChange}></input>
+
+                <label htmlFor='code_postal'>Code postal</label>
+                <input type="text" name="code_postal" required onChange={this.handleCode_PostalChange}></input>
+
+                <label htmlFor='city'>Ville</label>
+                <input type="text" name="city" required onChange={this.handleCityChange}></input>
+
+                <label htmlFor='country'>Pays</label>
+                <input type="text" name="country" required onChange={this.handleCountryChange}></input>
+
+                <label htmlFor='cv'>Cv</label>
+                <input type="file" name='cv'id='cv' onChange={this.handleCvchange}></input>
+                
+                <Button type='submit' variant="primary">Valider</Button>
+>>>>>>> 50f7ede465b355c741cce96b9379a316f43bebda
             </form>
            </div>
       )
