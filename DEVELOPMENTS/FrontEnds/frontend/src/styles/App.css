@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  padding:3%;
+}
+
+.navbar {
+  text-align: center;
+  padding: 10%;
+  padding: 10px 20px;
+  background: #fb911F;
+  display: inline-block;
+  transition: ease-out;
+  letter-spacing: 4px;
+  
+
+}
+.navbar-items Link:hover{
+  color:yellow;
+  border-bottom :2px solid #fb911F;
+}
+
+.table table-dark table-stripped {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  padding:500%;
+  
+}
+.porte{
+  position: relative;
+  background-color: aqua;
+}

@@ -45,7 +45,7 @@ class EntrepriseSearchBar extends React.Component {
       return(
         <>
          <div>
-           <center> <td> <div id="col1"><h1 className="blanc"><em>LA PORTE DE DEMAIN</em></h1></div></td></center>
+           <center className="porte"> <td> <div id="col1"><h1 className="blanc"><em>LA PORTE DE DEMAIN</em></h1></div></td></center>
             <div className="d-flex justify-content-center mb-5" id="flex">
                 <img src={EntrepriseSearchBar} className="mini" alt=""/>
                 <form className="form-inline my-2 my-lg-0" method="POST" onSubmit={this.handleSubmit} >

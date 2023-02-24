@@ -1,4 +1,5 @@
 import React from 'react'
+
 function StudentList() {
     var Students = [
         {
@@ -20,18 +21,17 @@ function StudentList() {
                 <tr>
                 <td>{elm.nom}</td>
                 <td>{elm.prenom}</td>
-                <td><button type="button" className="btn btn-danger " onClick={ () => this.handleDelete( elm.id)}>Supprimer</button></td>
-                <td><button type="button" className="btn btn-warning " onClick={ () => this.abandon( elm.id)}>Signal d'Abandon</button></td>
+                <td><button type="button" className='btn btn-danger' onClick={ () => this.handleDelete( elm.id)}>Supprimer</button></td>
                 </tr>
-            
         )
     })
     return(
-        <div>
-            <table>
+        <div className="table table-dark table-striped">
+            <table className='tableau'>
             <tr>
                 <th>Nom</th>
                 <th>Prénom</th>
+                <th>Action</th>
             </tr>
             {mapped}
             </table>

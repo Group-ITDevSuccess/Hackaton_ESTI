@@ -12,32 +12,36 @@ import Ajout from "./AddStudent";
 const AccueilAdmin = ()=>{
  return (
     <div>
-   <Router>
-    <nav>
-        <ul>
-            <li>
-                <Link to="/Welcome">Bienvenue</Link>
+   <Router >
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <ul className="navbar-nav">
+            <li className="navbar-item">
+                <Link className="nav-link" to="/Welcome">Bienvenue</Link>
             </li>
-            <li>
-                <Link to="/About">A propos</Link>
+            <li className="navbar-item">
+                <Link className="nav-link" to="/About">A propos</Link>
             </li>
-            <li>
-                <Link to="/Archives">Archives</Link>
+            <li className="navbar-item">
+                <Link className="nav-link" to="/Archives">Archives</Link>
             </li>
-            <li>
-                <Link to="/StudentList">Liste d'étudiants</Link>
+            <li className="navbar-item">
+                <Link className="nav-link" to="/StudentList">Liste d'étudiants</Link>
             </li>
-            <li>
-                <Link to="/EntrepriseList">Entreprises partenaires</Link>
+            <li className="navbar-item">
+                <Link className="nav-link" to="/EntrepriseList">Entreprises partenaires</Link>
             </li>
-            <li>
-                <Link to="/searchEtudiant">Rechercher un étudiant</Link>
+            <li className="navbar-item">
+                <Link className="nav-link" to="/searchEtudiant">Rechercher un étudiant</Link>
             </li>
-            <li>
-                <Link to="/add"> Ajout d'un étudiant</Link>
+            <li className="navbar-item">
+                <Link className="nav-link" to="/add"> Ajout d'un étudiant</Link>
             </li>
         </ul>
+
+
+        
     </nav>
+    
     <Switch>
      <Route path="/Welcome" component={Welcome}/>
      <Route path="/About" component={About}/>
